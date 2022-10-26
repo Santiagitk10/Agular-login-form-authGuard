@@ -7,6 +7,8 @@ import { StatisticComponent } from './statistic/statistic.component';
 
 
 const routes: Routes = [
+  //Para proteger las rutas y que solo pueda ingresar si está autenticado, se envía canActivate
+  //y se le pasa el guard que se acaba de crear el cual es un injectable
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
   { path: 'statistic', component: StatisticComponent, canActivate: [AuthGuard] },
   { path: '', component: LoginComponent },

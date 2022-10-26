@@ -21,3 +21,8 @@ export class AuthGuard implements CanActivate {
   }
 
 }
+
+
+//Este guard se genera por consola con ng g g "nombre en este caso guard" y se 
+//se selecciona la interfaz CanActivate. Ahora si se digitan las rutas en la url 
+//y no se está autenticado, redirije inmediatamente a la página de login
